@@ -1,0 +1,103 @@
+/* 默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全局样式 */
+body {
+  background-color: #faa;
+  color: #fff;
+}
+.page {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.show {
+  animation: show 1.5s 1;
+}
+.hide {
+  animation: hide 1.5s 1;
+}
+
+/* 菜单界面 */
+.title {
+  width: 15vw;
+  text-align: center;
+  line-height: 4vw;
+}
+
+/* 菜单按钮 */
+.btnGroup {
+  width: 100vw;
+}
+button {
+  background-color: #fff;
+  color: #F44336;
+  display: block;
+  width: 15vw;
+  height: 36px;
+  font-size: .95rem;
+  padding: 0.5em;
+  margin: 4px auto;
+  border: none;
+  outline: none;
+  transition: all .4s;
+  white-space: nowrap;
+}
+button:active,
+button:hover {
+  width: 9vw;
+  cursor: pointer;
+  background-color: #fee5e3;
+}
+
+/* 游戏页面 */
+#page1 {
+  display: flex;
+}
+canvas {
+  border-radius: .5%;
+}
+
+/* 页面切换动画 */
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* 评价页面 */
+.evaluate {
+  width: 10vw;
+  margin-bottom: 1vw;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.evaluate >div {
+  display: flex;
+}
+
+.evaluate .ekey {
+  display: block;
+  width: 5vw;
+  text-align: right;
+  margin-right: .5em;
+}

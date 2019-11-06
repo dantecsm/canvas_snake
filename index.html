@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Greedy Snake</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" media="screen and (max-width: 1000px)">
+  </head>
+  <body>
+    <div id="page1" class="page">
+      <h2 class="title">Greedy Snake</h2>
+      <div class="btnGroup">
+        <button id="new_game">New Game</button>
+        <!-- <button>Continue</button> -->
+        <button id="apple_rush">Apple Rush</button>
+        <button id="speed_rush">Speed Rush</button>
+        <button id="custom_mode">Custom Mode</button>
+        <button id="best_record">Best Record</button>
+      </div>
+    </div>
+    <div id="page2" class="page">
+      <canvas width=1000 height=600></canvas>
+    </div>
+    <div id="page3" class="page">
+      <h2 class="title">Skill Evaluate</h2>
+      <div class="evaluate">
+        <div><span class="ekey">Time: </span><span id="statElaspedTime">?:??</span> </div>
+        <div><span class="ekey">Picks: </span><span id="statPicks">?</span> </div>
+        <div><span class="ekey">Spec: </span><span id="statSpeed">?</span> </div>
+        <div><span class="ekey">Rank: </span><span id="statRank">?</span> </div>
+      </div>
+      <button id="menu_btn">Back To Menu</button>
+    </div>
+    <!-- 激活自动播放 -->
+    <script type="text/javascript" src="./js/stat.js" defer></script>
+    <script type="text/javascript" src="./js/game.js" defer></script>
+    <script type="text/javascript" src="./js/page.js" defer></script>
+    <script type="text/javascript" src="./js/mobile.js" defer></script>
+  </body>
+</html>

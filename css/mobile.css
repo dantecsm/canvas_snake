@@ -1,0 +1,28 @@
+/* 适配手机样式 */
+
+.title {
+	width: 50vw;
+	line-height: 15vw;
+}
+
+button {
+	width: 50vw;
+}
+
+button:hover {
+	width: 30vw;
+}
+
+.evaluate {
+	width: 50vw;
+	margin-bottom: 4vw;
+}
+
+.evaluate >div {
+	margin-left: 4vw;
+}
+
+.evaluate .ekey {
+	width: 15vw;
+	margin-right: 1.5em;
+}
